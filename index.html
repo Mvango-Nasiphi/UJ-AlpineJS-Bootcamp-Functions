@@ -166,49 +166,7 @@
             <button x-on:click="calculate">Calculate Transport fee</button>
         </div>
     </div>
-
-    <div class="widget">
-        <h2>Expensive Items Widget</h2>
-        <div class="items" x-data="expensiveItemWidget">
-            <div class="item">
-                <h3>Items Over 20</h3>
-                <div class="input">
-                    <label for="items">Please enter the list of items:</label>
-                    <input type="text" x-model="itemList" id="items">
-                </div>
-
-                <div class="message" x-text="expensiveItemMessage">
-
-                </div>
-
-                <div>
-                    <button x-on:click="calculate">Find expensive items</button>
-                </div>
-            </div>
-
-            <div class="item" x-data="expensiveItemsWidget">
-                <h3>Items Over</h3>
-                <div class="input">
-                    <label for="items">Please enter items List:</label>
-                    <input type="text" x-model="itemsList" id="items">
-                </div>
-
-                <div class="input">
-                    <label for="amount">Enter threshold amount:</label>
-                    <input type="text" x-model="thresholdAmount" id="amount">
-                </div>
-
-                <div class="message" x-text="expensiveItemsMessage">
-
-                </div>
-
-                <div>
-                    <button x-on:click="calculate">Find expensive items</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    
     <div class="widget" x-data="">
         <h2>Word Game Widget</h2>
         <div class="games">
@@ -264,6 +222,49 @@
 
         </div>
     </div>
+
+    <div class="widget">
+        <h2>Expensive Items Widget</h2>
+        <div class="items" x-data="expensiveItemWidget">
+            <div class="item">
+                <h3>Items Over 20</h3>
+                <div class="input">
+                    <label for="items">Please enter the list of items:</label>
+                    <input type="text" x-model="itemList" id="items">
+                </div>
+
+                <div class="message" x-text="expensiveItemMessage">
+
+                </div>
+
+                <div>
+                    <button x-on:click="calculate">Find expensive items</button>
+                </div>
+            </div>
+
+            <div class="item" x-data="expensiveItemsWidget">
+                <h3>Items Over</h3>
+                <div class="input">
+                    <label for="items">Please enter items List:</label>
+                    <input type="text" x-model="itemsList" id="items">
+                </div>
+
+                <div class="input">
+                    <label for="amount">Enter threshold amount:</label>
+                    <input type="text" x-model="thresholdAmount" id="amount">
+                </div>
+
+                <div class="message" x-text="expensiveItemsMessage">
+
+                </div>
+
+                <div>
+                    <button x-on:click="calculate">Find expensive items</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
